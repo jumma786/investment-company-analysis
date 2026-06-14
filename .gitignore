@@ -1,0 +1,16 @@
+# Raw datasets
+data/raw/*.csv
+
+# Processed dataset
+data/processed/investment_products_gold.csv
+
+.ipynb_checkpoints/
+.virtual_documents/
+anaconda_projects/
+
+*.ipynb
+*.db
+__pycache__/
+*.pyc
+
+*.pbix.autosave
