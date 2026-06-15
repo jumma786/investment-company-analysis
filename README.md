@@ -205,94 +205,6 @@ Leading investment companies include:
 
 ---
 
-## Key Findings
-
-### Industry Growth
-
-* Investment products increased from **39,867** in 2010 to **43,121** in 2026.
-* Overall product availability continued to expand despite industry consolidation.
-
-### Company Participation
-
-* Investment companies declined from **2,737** in 2010 to **2,044** in 2026.
-* Represents approximately a **25% decrease**.
-
-### Industry Concentration
-
-* Average products per company increased from **14.6** to **21.1**.
-* Indicates increasing concentration among major investment firms.
-
-### Geographic Concentration
-
-Top states by product count:
-
-1. Massachusetts
-2. New York
-3. California
-
-These three states account for a significant share of all registered investment products.
-
-### Market Leaders
-
-Leading investment companies include:
-
-* Goldman Sachs Trust
-* PIMCO Funds
-* John Hancock Funds II
-* JPMorgan Trust I
-
----
-
-
-## Dashboard Preview
-
-### Page 1 – Executive Overview
-
-![Executive Overview](powerbi/page1_executive_overview.png)
-
-### Page 2 – Geographic Analysis
-
-![Geographic Analysis](powerbi/page2_geographic_analysis.png)
-
-### Page 3 – Market Leaders Analysis
-
-![Market Leaders Analysis](powerbi/page3_market_leaders.png)
-
----
-
-## Dashboard Pages
-
-### Page 1 – Executive Overview
-
-Business Questions Answered:
-
-* How has the industry evolved?
-* Are investment products increasing?
-* Are investment companies decreasing?
-* Is the market becoming more concentrated?
-
----
-
-### Page 2 – Geographic Analysis
-
-Business Questions Answered:
-
-* Where is the industry concentrated?
-* Which states dominate the market?
-* How is product distribution spread across the United States?
-
----
-
-### Page 3 – Market Leaders Analysis
-
-Business Questions Answered:
-
-* Who are the leading investment firms?
-* How concentrated is the market?
-* Which fund series generate the highest number of products?
-
----
-
 ## SQL Analysis
 
 Topics Covered:
@@ -310,13 +222,9 @@ Topics Covered:
 
 ## Detailed Project Report
 
-A complete business report including methodology, findings, business implications, dashboard analysis, and conclusions is available here:
+A comprehensive report containing methodology, findings, business implications, dashboard analysis, and conclusions is available below:
 
-📄 **Project Report**
-
-```text
-docs/project_report.md
-```
+📄 **[View Full Project Report](docs/project_report.md)**
 
 ---
 
@@ -373,10 +281,10 @@ investment-company-analysis
 
 ## Conclusion
 
-The U.S. investment fund industry demonstrates a clear trend toward consolidation.
+The U.S. investment fund industry experienced significant consolidation between 2010 and 2026.
 
-While the number of investment products continued to grow between 2010 and 2026, the number of participating companies declined significantly. As a result, fewer firms are managing larger product portfolios, indicating increasing market concentration.
+While investment products increased from 39,867 to 43,121, the number of participating companies declined by approximately 25%. As a result, the average number of products managed per company increased substantially, indicating growing market concentration.
 
-This project demonstrates the use of Python, SQL Server, and Power BI to build a complete end-to-end analytics solution capable of transforming raw regulatory data into actionable business insights.
+This project demonstrates how Python, SQL Server, and Power BI can be combined to build an end-to-end analytics solution capable of transforming large-scale regulatory data into meaningful business insights.
 
 
