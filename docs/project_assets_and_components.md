@@ -1,4 +1,4 @@
-\# Project Assets and Development Components
+ # Project Assets and Development Components
 
 
 
@@ -10,19 +10,19 @@ The following files and scripts were created throughout the project lifecycle.
 
 
 
-\---
+ ---
 
 
 
-\# Python ETL Scripts
+ # Python ETL Scripts
 
 
 
-\## build\_gold.py
+ ## build _gold.py
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -30,37 +30,37 @@ Creates the final analytical dataset used for SQL Server and Power BI reporting.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Reads cleaned source data
+ * Reads cleaned source data
 
-\* Applies final transformations
+ * Applies final transformations
 
-\* Creates the Gold Layer dataset
+ * Creates the Gold Layer dataset
 
-\* Generates:
+ * Generates:
 
 
 
 ```text
 
-investment\_products\_gold.csv
+investment _products _gold.csv
 
 ```
 
 
 
-\---
+ ---
 
 
 
-\## check\_headers.py
+ ## check _headers.py
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -68,21 +68,21 @@ Validates schema consistency across all annual SEC datasets.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Compares column names
+ * Compares column names
 
-\* Detects schema differences
+ * Detects schema differences
 
-\* Identifies missing fields
+ * Identifies missing fields
 
-\* Ensures merge readiness
+ * Ensures merge readiness
 
 
 
-\### Problem Solved
+ ### Problem Solved
 
 
 
@@ -90,15 +90,15 @@ Prevented data corruption caused by schema mismatches.
 
 
 
-\---
+ ---
 
 
 
-\## import\_to\_sql.py
+ ## import _to _sql.py
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -106,21 +106,21 @@ Loads the analytical dataset into SQL Server.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Reads final dataset
+ * Reads final dataset
 
-\* Connects to SQL Server
+ * Connects to SQL Server
 
-\* Imports records into database tables
+ * Imports records into database tables
 
-\* Validates successful loading
+ * Validates successful loading
 
 
 
-\### Problem Solved
+ ### Problem Solved
 
 
 
@@ -128,19 +128,19 @@ Automated database integration.
 
 
 
-\---
+ ---
 
 
 
-\# SQL Scripts
+ # SQL Scripts
 
 
 
-\## 01\_create\_database.sql
+ ## 01 _create _database.sql
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -148,25 +148,25 @@ Creates the project database.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Creates SQL Server database
+ * Creates SQL Server database
 
-\* Initializes project environment
-
-
-
-\---
+ * Initializes project environment
 
 
 
-\## 02\_create\_table.sql
+ ---
 
 
 
-\### Purpose
+ ## 02 _create _table.sql
+
+
+
+ ### Purpose
 
 
 
@@ -174,25 +174,25 @@ Creates analytical tables.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Defines table schema
+ * Defines table schema
 
-\* Creates columns and data types
-
-
-
-\---
+ * Creates columns and data types
 
 
 
-\## 03\_bulk\_import.sql
+ ---
 
 
 
-\### Purpose
+ ## 03 _bulk _import.sql
+
+
+
+ ### Purpose
 
 
 
@@ -200,27 +200,27 @@ Imports large datasets efficiently.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Bulk loads CSV data
+ * Bulk loads CSV data
 
-\* Reduces import time
+ * Reduces import time
 
-\* Improves loading performance
-
-
-
-\---
+ * Improves loading performance
 
 
 
-\## 04\_business\_analysis.sql
+ ---
 
 
 
-\### Purpose
+ ## 04 _business _analysis.sql
+
+
+
+ ### Purpose
 
 
 
@@ -228,41 +228,41 @@ Performs business-focused analysis.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Product trends
+ * Product trends
 
-\* Company trends
+ * Company trends
 
-\* Geographic analysis
+ * Geographic analysis
 
-\* Market concentration metrics
-
-
-
-\### Business Questions Answered
+ * Market concentration metrics
 
 
 
-\* Is the industry growing?
-
-\* Are companies increasing or decreasing?
-
-\* Which states dominate the market?
+ ### Business Questions Answered
 
 
 
-\---
+ * Is the industry growing?
+
+ * Are companies increasing or decreasing?
+
+ * Which states dominate the market?
 
 
 
-\## 05\_advanced\_analysis.sql
+ ---
 
 
 
-\### Purpose
+ ## 05 _advanced _analysis.sql
+
+
+
+ ### Purpose
 
 
 
@@ -270,41 +270,41 @@ Performs advanced analytical queries.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Rankings
+ * Rankings
 
-\* Window Functions
+ * Window Functions
 
-\* Market Share Analysis
+ * Market Share Analysis
 
-\* Portfolio Concentration Analysis
-
-
-
-\### Business Questions Answered
+ * Portfolio Concentration Analysis
 
 
 
-\* Who are the market leaders?
-
-\* Which firms control the largest portfolios?
-
-\* How concentrated is the industry?
+ ### Business Questions Answered
 
 
 
-\---
+ * Who are the market leaders?
+
+ * Which firms control the largest portfolios?
+
+ * How concentrated is the industry?
 
 
 
-\## drop\_all\_tables.sql
+ ---
 
 
 
-\### Purpose
+ ## drop _all _tables.sql
+
+
+
+ ### Purpose
 
 
 
@@ -312,23 +312,23 @@ Development utility script.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Removes project tables during testing
+ * Removes project tables during testing
 
 
 
-\---
+ ---
 
 
 
-\## drop\_database.sql
+ ## drop _database.sql
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -336,27 +336,27 @@ Environment reset utility.
 
 
 
-\### Responsibilities
+ ### Responsibilities
 
 
 
-\* Removes project database during development
+ * Removes project database during development
 
 
 
-\---
+ ---
 
 
 
-\# Power BI Assets
+ # Power BI Assets
 
 
 
-\## Investment\_Company\_Analysis.pbix
+ ## Investment _Company _Analysis.pbix
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -364,33 +364,11 @@ Interactive business intelligence dashboard.
 
 
 
-\### Pages
+ ### Pages
 
 
 
-\#### Page 1 – Executive Overview
-
-
-
-Focus:
-
-
-
-\* Industry Growth
-
-\* Product Trends
-
-\* Company Trends
-
-\* Market Concentration
-
-
-
-\---
-
-
-
-\#### Page 2 – Geographic Analysis
+ #### Page 1 – Executive Overview
 
 
 
@@ -398,19 +376,21 @@ Focus:
 
 
 
-\* State Distribution
+ * Industry Growth
 
-\* Geographic Concentration
+ * Product Trends
 
-\* Top States
+ * Company Trends
 
-
-
-\---
+ * Market Concentration
 
 
 
-\#### Page 3 – Market Leaders Analysis
+ ---
+
+
+
+ #### Page 2 – Geographic Analysis
 
 
 
@@ -418,29 +398,49 @@ Focus:
 
 
 
-\* Company Rankings
+ * State Distribution
 
-\* Market Share
+ * Geographic Concentration
 
-\* Top Fund Series
-
-\* Industry Leaders
+ * Top States
 
 
 
-\---
+ ---
 
 
 
-\# Dataset Assets
+ #### Page 3 – Market Leaders Analysis
 
 
 
-\## Raw SEC Files
+Focus:
 
 
 
-\### Coverage
+ * Company Rankings
+
+ * Market Share
+
+ * Top Fund Series
+
+ * Industry Leaders
+
+
+
+ ---
+
+
+
+ # Dataset Assets
+
+
+
+ ## Raw SEC Files
+
+
+
+ ### Coverage
 
 
 
@@ -448,7 +448,7 @@ Focus:
 
 
 
-\### Files
+ ### Files
 
 
 
@@ -456,29 +456,29 @@ Focus:
 
 investmentcompanyseriesclass2010.csv
 
-investment\_company\_series\_class\_2011.csv
+investment _company _series _class _2011.csv
 
-investment\_company\_series\_class\_2012.csv
+investment _company _series _class _2012.csv
 
-investment\_company\_series\_class\_2013.csv
+investment _company _series _class _2013.csv
 
-investment\_company\_series\_class\_2014.csv
+investment _company _series _class _2014.csv
 
-investment\_company\_series\_class\_2015.csv
+investment _company _series _class _2015.csv
 
-investment\_company\_series\_class\_2017.csv
+investment _company _series _class _2017.csv
 
-investment\_company\_series\_class\_2018.csv
+investment _company _series _class _2018.csv
 
-investment\_company\_series\_class\_2019.csv
+investment _company _series _class _2019.csv
 
-investment\_company\_series\_class\_2020.csv
+investment _company _series _class _2020.csv
 
-investment\_company\_series\_class\_2021.csv
+investment _company _series _class _2021.csv
 
-investment\_company\_series\_class\_2022.csv
+investment _company _series _class _2022.csv
 
-investment\_company\_series\_class\_2023.csv
+investment _company _series _class _2023.csv
 
 investment-company-series-class-2024.csv
 
@@ -490,47 +490,47 @@ investment-company-series-class-2026.csv
 
 
 
-\### Total Raw Data
+ ### Total Raw Data
 
 
 
-\* 17 annual files
+ * 17 annual files
 
-\* Approximately 133 MB
-
-
-
-\---
+ * Approximately 133 MB
 
 
 
-\## Gold Dataset
+ ---
 
 
 
-\### File
+ ## Gold Dataset
+
+
+
+ ### File
 
 
 
 ```text
 
-investment\_products\_gold.csv
+investment _products _gold.csv
 
 ```
 
 
 
-\### Statistics
+ ### Statistics
 
 
 
-\* 713,468 Records
+ * 713,468 Records
 
-\* 15 Columns
+ * 15 Columns
 
 
 
-\### Purpose
+ ### Purpose
 
 
 
@@ -538,11 +538,11 @@ Served as the single source of truth for SQL Server and Power BI.
 
 
 
-\---
+ ---
 
 
 
-\# Final Project Architecture
+ # Final Project Architecture
 
 
 
@@ -554,25 +554,25 @@ Raw SEC Files (2010–2026)
 
 Schema Validation
 
-(check\_headers.py)
+(check _headers.py)
 
 &#x20;         ↓
 
 Data Transformation
 
-(build\_gold.py)
+(build _gold.py)
 
 &#x20;         ↓
 
 Gold Dataset
 
-(investment\_products\_gold.csv)
+(investment _products _gold.csv)
 
 &#x20;         ↓
 
 SQL Server
 
-(import\_to\_sql.py)
+(import _to _sql.py)
 
 &#x20;         ↓
 
@@ -592,15 +592,15 @@ Business Insights
 
 
 
-\---
+ ---
 
 
 
-\# Project Development Summary
+ # Project Development Summary
 
 
 
-\### Data Source Files
+ ### Data Source Files
 
 
 
@@ -608,7 +608,7 @@ Business Insights
 
 
 
-\### Python Scripts
+ ### Python Scripts
 
 
 
@@ -616,15 +616,15 @@ Business Insights
 
 
 
-\* build\_gold.py
+ * build _gold.py
 
-\* check\_headers.py
+ * check _headers.py
 
-\* import\_to\_sql.py
+ * import _to _sql.py
 
 
 
-\### SQL Scripts
+ ### SQL Scripts
 
 
 
@@ -632,7 +632,7 @@ Business Insights
 
 
 
-\### Dashboard Pages
+ ### Dashboard Pages
 
 
 
@@ -640,7 +640,7 @@ Business Insights
 
 
 
-\### Final Dataset
+ ### Final Dataset
 
 
 
@@ -648,21 +648,21 @@ Business Insights
 
 
 
-\### Technologies Used
+ ### Technologies Used
 
 
 
-\* Python
+ * Python
 
-\* Pandas
+ * Pandas
 
-\* SQL Server
+ * SQL Server
 
-\* Power BI
+ * Power BI
 
-\* Git
+ * Git
 
-\* GitHub
+ * GitHub
 
 
 

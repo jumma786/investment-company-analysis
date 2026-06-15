@@ -1,4 +1,4 @@
-\# Challenges Faced and Solutions
+  # Challenges Faced and Solutions
 
 
 
@@ -6,15 +6,15 @@ One of the most valuable aspects of this project was overcoming a series of real
 
 
 
-\---
+  ---
 
 
 
-\## 1. Collecting and Managing Multi-Year Datasets
+  ## 1. Collecting and Managing Multi-Year Datasets
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -26,11 +26,11 @@ The project required collecting and managing datasets spanning:
 
 
 
-\* 2010–2026
+  * 2010–2026
 
-\* 17 separate CSV files
+  * 17 separate CSV files
 
-\* More than 133 MB of raw data
+  * More than 133 MB of raw data
 
 
 
@@ -38,7 +38,7 @@ Managing a large collection of files increased the complexity of data integratio
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -46,15 +46,15 @@ Developed automated Python workflows to process all source files and create a ce
 
 
 
-\---
+  ---
 
 
 
-\## 2. Inconsistent File Naming Conventions
+  ## 2. Inconsistent File Naming Conventions
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -70,7 +70,7 @@ Examples:
 
 investmentcompanyseriesclass2010.csv
 
-investment\_company\_series\_class\_2011.csv
+investment  _company  _series  _class  _2011.csv
 
 investment-company-series-class-2024.csv
 
@@ -82,7 +82,7 @@ This prevented simple automated processing.
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -90,15 +90,15 @@ Created file discovery and validation logic to automatically identify source fil
 
 
 
-\---
+  ---
 
 
 
-\## 3. Schema Validation Across Years
+  ## 3. Schema Validation Across Years
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -110,13 +110,13 @@ Potential issues included:
 
 
 
-\* Different column names
+  * Different column names
 
-\* Different column ordering
+  * Different column ordering
 
-\* Missing fields
+  * Missing fields
 
-\* Additional fields
+  * Additional fields
 
 
 
@@ -124,7 +124,7 @@ Without validation, merged data could become inaccurate or corrupted.
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -136,15 +136,15 @@ This ensured structural consistency throughout the ETL process.
 
 
 
-\---
+  ---
 
 
 
-\## 4. Merging 17 Years of Data
+  ## 4. Merging 17 Years of Data
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -156,17 +156,17 @@ Risks included:
 
 
 
-\* Missing records
+  * Missing records
 
-\* Duplicate records
+  * Duplicate records
 
-\* Schema conflicts
+  * Schema conflicts
 
-\* Data loss during transformation
+  * Data loss during transformation
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -174,15 +174,15 @@ Developed automated merging scripts using Pandas to consolidate all annual datas
 
 
 
-\---
+  ---
 
 
 
-\## 5. Creating a Historical Time Dimension
+  ## 5. Creating a Historical Time Dimension
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -194,17 +194,17 @@ Without a reporting-year attribute, it would not be possible to analyze:
 
 
 
-\* Industry growth
+  * Industry growth
 
-\* Company trends
+  * Company trends
 
-\* Product trends
+  * Product trends
 
-\* Market evolution
+  * Market evolution
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -212,15 +212,15 @@ Extracted year information from source files and created a reporting-year dimens
 
 
 
-\---
+  ---
 
 
 
-\## 6. Data Quality Issues
+  ## 6. Data Quality Issues
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -228,15 +228,15 @@ Large regulatory datasets contained a variety of quality issues including:
 
 
 
-\* Missing values
+  * Missing values
 
-\* Blank records
+  * Blank records
 
-\* Inconsistent text formatting
+  * Inconsistent text formatting
 
-\* Duplicate entities
+  * Duplicate entities
 
-\* Invalid entries
+  * Invalid entries
 
 
 
@@ -244,7 +244,7 @@ Poor data quality would negatively impact both SQL analysis and dashboard report
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -252,15 +252,15 @@ Built dedicated cleaning scripts to standardize values, remove invalid records, 
 
 
 
-\---
+  ---
 
 
 
-\## 7. Building a Gold Layer Dataset
+  ## 7. Building a Gold Layer Dataset
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -272,13 +272,13 @@ The data required:
 
 
 
-\* Cleaning
+  * Cleaning
 
-\* Standardization
+  * Standardization
 
-\* Historical enrichment
+  * Historical enrichment
 
-\* Structural validation
+  * Structural validation
 
 
 
@@ -286,11 +286,11 @@ before it could be used for business intelligence.
 
 
 
-\### Solution
+  ### Solution
 
 
 
-Created a Gold Layer dataset (`investment\_products\_gold.csv`) that served as the single source of truth for SQL Server and Power BI.
+Created a Gold Layer dataset (`investment  _products  _gold.csv`) that served as the single source of truth for SQL Server and Power BI.
 
 
 
@@ -298,21 +298,21 @@ Final Dataset:
 
 
 
-\* 713,468 records
+  * 713,468 records
 
-\* 15 columns
-
-
-
-\---
+  * 15 columns
 
 
 
-\## 8. SQL Server Integration
+  ---
 
 
 
-\### Challenge
+  ## 8. SQL Server Integration
+
+
+
+  ### Challenge
 
 
 
@@ -320,17 +320,17 @@ Loading a large analytical dataset into SQL Server introduced several issues:
 
 
 
-\* Data type validation
+  * Data type validation
 
-\* Import performance
+  * Import performance
 
-\* Table design
+  * Table design
 
-\* Data verification
+  * Data verification
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -338,15 +338,15 @@ Developed SQL scripts for:
 
 
 
-\* Database creation
+  * Database creation
 
-\* Table creation
+  * Table creation
 
-\* Bulk data import
+  * Bulk data import
 
-\* Business analysis
+  * Business analysis
 
-\* Advanced analytical queries
+  * Advanced analytical queries
 
 
 
@@ -354,15 +354,15 @@ This ensured a reliable and scalable reporting environment.
 
 
 
-\---
+  ---
 
 
 
-\## 9. Designing Business Metrics
+  ## 9. Designing Business Metrics
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -374,15 +374,15 @@ Important metrics such as:
 
 
 
-\* Product growth
+  * Product growth
 
-\* Company growth
+  * Company growth
 
-\* Market concentration
+  * Market concentration
 
-\* Product-per-company ratios
+  * Product-per-company ratios
 
-\* Company rankings
+  * Company rankings
 
 
 
@@ -390,7 +390,7 @@ had to be derived from the underlying data.
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -398,15 +398,15 @@ Created custom analytical measures using SQL and Power BI to transform raw recor
 
 
 
-\---
+  ---
 
 
 
-\## 10. Dashboard Design and Storytelling
+  ## 10. Dashboard Design and Storytelling
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -418,7 +418,7 @@ The challenge was identifying which insights would be most valuable to business 
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -426,7 +426,7 @@ Designed a focused three-page Power BI dashboard:
 
 
 
-\### Executive Overview
+  ### Executive Overview
 
 
 
@@ -434,7 +434,7 @@ Industry growth and concentration trends.
 
 
 
-\### Geographic Analysis
+  ### Geographic Analysis
 
 
 
@@ -442,7 +442,7 @@ State-level distribution and concentration.
 
 
 
-\### Market Leaders Analysis
+  ### Market Leaders Analysis
 
 
 
@@ -454,15 +454,15 @@ This structure improved usability and storytelling.
 
 
 
-\---
+  ---
 
 
 
-\## 11. GitHub File Size Limitations
+  ## 11. GitHub File Size Limitations
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -472,7 +472,7 @@ The final analytical dataset exceeded GitHub's file size restrictions.
 
 ```text
 
-investment\_products\_gold.csv
+investment  _products  _gold.csv
 
 128 MB
 
@@ -484,7 +484,7 @@ GitHub rejects files larger than 100 MB.
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -492,15 +492,15 @@ Removed generated datasets from version control, configured `.gitignore`, and do
 
 
 
-\---
+  ---
 
 
 
-\## 12. Repository Refactoring and Cleanup
+  ## 12. Repository Refactoring and Cleanup
 
 
 
-\### Challenge
+  ### Challenge
 
 
 
@@ -512,17 +512,17 @@ This resulted in:
 
 
 
-\* Duplicate files
+  * Duplicate files
 
-\* Experimental code
+  * Experimental code
 
-\* Redundant SQL scripts
+  * Redundant SQL scripts
 
-\* Repository clutter
+  * Repository clutter
 
 
 
-\### Solution
+  ### Solution
 
 
 
@@ -550,11 +550,11 @@ This improved maintainability and professional presentation.
 
 
 
-\---
+  ---
 
 
 
-\## Key Lessons Learned
+  ## Key Lessons Learned
 
 
 
@@ -562,21 +562,21 @@ This project provided hands-on experience in:
 
 
 
-\* Data Engineering
+  * Data Engineering
 
-\* ETL Development
+  * ETL Development
 
-\* Schema Validation
+  * Schema Validation
 
-\* Data Quality Management
+  * Data Quality Management
 
-\* SQL Analytics
+  * SQL Analytics
 
-\* Power BI Dashboard Development
+  * Power BI Dashboard Development
 
-\* Business Intelligence
+  * Business Intelligence
 
-\* Git \& GitHub Workflow Management
+  * Git   & GitHub Workflow Management
 
 
 

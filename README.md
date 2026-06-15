@@ -227,6 +227,7 @@ Topics Covered:
 📄 [Challenges and Solutions](docs/challenges_and_solutions.md)
 
 📄 [Project Assets and Components](docs/project_assets_and_components.md)
+
 ---
 
 ## Repository Structure
