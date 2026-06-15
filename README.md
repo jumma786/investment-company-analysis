@@ -220,12 +220,13 @@ Topics Covered:
 
 ---
 
-## Detailed Project Report
+## Project Documentation
 
-A comprehensive report containing methodology, findings, business implications, dashboard analysis, and conclusions is available below:
+📄 [Project Report](docs/project_report.md)
 
-📄 **[View Full Project Report](docs/project_report.md)**
+📄 [Challenges and Solutions](docs/challenges_and_solutions.md)
 
+📄 [Project Assets and Components](docs/project_assets_and_components.md)
 ---
 
 ## Repository Structure
@@ -233,11 +234,38 @@ A comprehensive report containing methodology, findings, business implications, 
 ```text
 investment-company-analysis
 │
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
 ├── data
-│   └── raw
+│   ├── raw
+│   │   ├── investmentcompanyseriesclass2010.csv
+│   │   ├── investment_company_series_class_2011.csv
+│   │   ├── investment_company_series_class_2012.csv
+│   │   ├── investment_company_series_class_2013.csv
+│   │   ├── investment_company_series_class_2014.csv
+│   │   ├── investment_company_series_class_2015.csv
+│   │   ├── investment_company_series_class_2017.csv
+│   │   ├── investment_company_series_class_2018.csv
+│   │   ├── investment_company_series_class_2019.csv
+│   │   ├── investment_company_series_class_2020.csv
+│   │   ├── investment_company_series_class_2021.csv
+│   │   ├── investment_company_series_class_2022.csv
+│   │   ├── investment_company_series_class_2023.csv
+│   │   ├── investment-company-series-class-2024.csv
+│   │   ├── investment-company-series-class-2025.csv
+│   │   ├── investment-company-series-class-2026.csv
+│   │   └── inventory.txt
+│   │
+│   └── processed
+│       └── investment_products_gold.csv
 │
 ├── docs
-│   └── project_report.md
+│   ├── project_report.md
+│   ├── challenges_and_solutions.md
+│   └── project_assets_and_components.md
 │
 ├── powerbi
 │   ├── Investment_Company_Analysis.pbix
@@ -250,16 +278,14 @@ investment-company-analysis
 │   ├── check_headers.py
 │   └── import_to_sql.py
 │
-├── sql
-│   ├── 01_create_database.sql
-│   ├── 02_create_table.sql
-│   ├── 03_bulk_import.sql
-│   ├── 04_business_analysis.sql
-│   └── 05_advanced_analysis.sql
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+└── sql
+    ├── 01_create_database.sql
+    ├── 02_create_table.sql
+    ├── 03_bulk_import.sql
+    ├── 04_business_analysis.sql
+    ├── 05_advanced_analysis.sql
+    ├── drop_all_tables.sql
+    └── drop_database.sql
 ```
 
 ---
@@ -287,4 +313,7 @@ While investment products increased from 39,867 to 43,121, the number of partici
 
 This project demonstrates how Python, SQL Server, and Power BI can be combined to build an end-to-end analytics solution capable of transforming large-scale regulatory data into meaningful business insights.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
